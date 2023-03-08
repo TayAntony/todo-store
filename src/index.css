@@ -93,6 +93,14 @@
 
   background: #060606;
   border-radius: 12px;
+
+  cursor: pointer;
+}
+
+.mainButton:hover{
+  background: #181818;
+  box-shadow: 5px 5px 20px #af2a2a;
+ 
 }
 
 .possuiConta {
@@ -107,4 +115,13 @@
   color: #EBEBEB;
 
   opacity: 0.7;
+}
+
+.possuiConta:hover{
+  font-weight: 700;
+}
+
+.maximo{
+  align-items: center;
+
 }
