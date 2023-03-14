@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 * {
   margin: 0;
   border: 0;
@@ -20,21 +26,24 @@
 }
 
 .imgBackground {
+  display: flex;
   background-image: url("/fundo_inicio.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-position: 45%;
+  padding: 16px;
 }
 
 .slogan{
   font-family: 'Michroma';
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 51px;
+  font-size: 16px;
+  line-height: 40px;
 
   color: #FFFFFF;
 }
@@ -56,26 +65,18 @@
   top: 100px;
 }
 
-.logo{
-  max-width: 150px;
-}
-
 .cardInicio{
   box-sizing: border-box;
-  max-height: 500px;
-  max-width: 400px;
-  text-align: center;
-  margin-right: 100px;
+  text-align: justify;
+  margin: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem 2rem 5rem 2rem;
+  gap: 3rem;
+  padding: 2rem;
 
   background: linear-gradient(0.42deg, rgba(0, 0, 0, 0.35) 0.39%, rgba(0, 0, 0, 0) 101.3%);
   backdrop-filter: blur(17.5px);
- 
-
   border: 1px solid white;
 
   border-radius: 14px;
@@ -83,10 +84,9 @@
 
 .mainButton{
   box-sizing: border-box;
-
-  font-size: 24px;
+  min-width: 250px;
+  font-size: 20px;
   color: white;
-  width: 300px;
   padding: 1rem;
   border: 1px solid white;
   font-weight: 700;
@@ -121,7 +121,51 @@
   font-weight: 700;
 }
 
-.maximo{
-  align-items: center;
+.paragrafos{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  min-width: 200px;
 
+  color: #EBEBEB;
 }
+
+.inputs{
+  margin: 1rem;
+  min-width: 300px;
+  border-bottom: 1px solid white;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 2px;
+  
+}
+
+.inputs::-webkit-input-placeholder{
+  font-weight: 300px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Poppins';
+  opacity: 0.7;
+}
+
+.inputs:focus{
+  outline: none;
+}
+
+.esqueciSenha {
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 36px;
+  text-decoration: none;
+
+  color: white;
+
+  opacity: 0.8;
+}
+
